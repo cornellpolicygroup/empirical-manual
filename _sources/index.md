@@ -16,7 +16,7 @@ We welcome contributions and feedback! If you encounter any issues or have sugge
 
 ### How to Open an Issue
 
-1. Go to the [Issues](https://github.com/yourusername/your-repo-name/issues) tab of this repository.
+1. Go to the [Issues](https://github.com/cornellpolicygroup/empirical-manual/issues) tab of this repository.
 2. Click on the "New issue" button.
 3. Provide a clear description of the issue or suggestion.
 4. Submit the issue.
