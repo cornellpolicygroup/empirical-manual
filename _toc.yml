@@ -1,0 +1,32 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - caption: Overview
+    chapters:
+    - file: content/01-Ab-Initio
+    - file: content/02-Manuscript-Format
+  - caption: Paper Sections
+    chapters:
+    - file: content/03-00-Section-Details.md
+      sections:
+      - file: content/03-01-Abstract
+      - file: content/03-02-Introduction
+      - file: content/03-03-Literature-Review
+      - file: content/03-04-Background
+      - file: content/03-05-Data
+      - file: content/03-06-Empirical-Methodology
+      - file: content/03-07-Results
+      - file: content/03-08-Discussion
+      - file: content/03-09-Conclusion
+      - file: content/03-010-References
+  - caption: Research Resources
+    chapters: 
+    - file: content/04-Datasets
+    - file: content/05-STATA-R
+    - file: content/06-Writing
+  - caption: Appendix
+    chapters:
+    - file: content/citations
