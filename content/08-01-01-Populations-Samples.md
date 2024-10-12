@@ -42,6 +42,8 @@ We can conceptualize this with an example: Say you want to sample 30 students fr
 
 Replacement, then, means every unit has an equal chance of being selected in the sample irrespective of who else gets chosen (i.e., you being sampled doesn't change that my chance of being selected is still 1/275). It also means units sampled and replaced have an equal chance of being *reselected*.
 
+#### Independence & IID
+
 Sampling with replacement produces the powerful property of independence in inferential statistics. Independence is the condition where the occurrence or outcome of one event or variable does not influence or affect the occurrence or outcome of another event or variable. I.e., you being selected for the sample doesn't change my chance of being selected.
 
 This leads to another property known as IID, which states:
