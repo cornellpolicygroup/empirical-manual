@@ -10,7 +10,7 @@ parts:
     - file: content/02-Manuscript-Format
   - caption: Paper Sections
     chapters:
-    - file: content/03-00-Section-Details.md
+    - file: content/03-00-Section-Details
       sections:
       - file: content/03-01-Abstract
       - file: content/03-02-Introduction
@@ -27,6 +27,14 @@ parts:
     - file: content/04-Datasets
     - file: content/05-STATA-R
     - file: content/06-Writing
+  - caption: Causal Inference
+    chapters: 
+    - file: content/08-00-Causal-Inference-Details
+    - file: content/08-01-00-Statistical-Primer
+      sections:
+      - file: content/08-01-01-Populations-Samples
+      - file: content/08-01-02-Central-Tendency
+      - file: content/08-01-03-Variability
   - caption: Appendix
     chapters:
     - file: content/citations
