@@ -1,0 +1,4 @@
+# Statistics: Variables
+
+## Definitions
+

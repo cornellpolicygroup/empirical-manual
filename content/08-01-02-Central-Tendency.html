@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Citations &#8212; Cornell Policy Group Manual</title>
+    <title>Statistics: Measures of Central Tendency &#8212; Cornell Policy Group Manual</title>
   
   
   
@@ -57,10 +57,13 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/citations';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/08-01-02-Central-Tendency';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Statistics: Measures of Variability" href="08-01-03-Variability.html" />
+    <link rel="next" title="Statistics: Measures of Variability" href="08-01-03-Variability.html" />
+    <link rel="prev" title="Statistics: Populations &amp; Samples" href="08-01-01-Populations-Samples.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -206,18 +209,18 @@
 <li class="toctree-l1"><a class="reference internal" href="06-Writing.html">Writing Resources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Causal Inference</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="08-00-Causal-Inference-Details.html">Building Blocks: Causal Inference</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="08-01-00-Statistical-Primer.html">Statistics Primer</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="08-01-00-Statistical-Primer.html">Statistics Primer</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="08-01-01-Populations-Samples.html">Statistics: Populations &amp; Samples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="08-01-02-Central-Tendency.html">Statistics: Measures of Central Tendency</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Statistics: Measures of Central Tendency</a></li>
 <li class="toctree-l2"><a class="reference internal" href="08-01-03-Variability.html">Statistics: Measures of Variability</a></li>
 </ul>
 </details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Citations</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="citations.html">Citations</a></li>
 </ul>
 
     </div>
@@ -289,7 +292,7 @@
       
       
       
-      <li><a href="https://github.com/cornellpolicygroup/empirical-manual/issues/new?title=Issue%20on%20page%20%2Fcontent/citations.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/cornellpolicygroup/empirical-manual/issues/new?title=Issue%20on%20page%20%2Fcontent/08-01-02-Central-Tendency.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -319,7 +322,7 @@
       
       
       
-      <li><a href="../_sources/content/citations.md" target="_blank"
+      <li><a href="../_sources/content/08-01-02-Central-Tendency.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -390,7 +393,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -401,11 +406,35 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Citations</h1>
+    <h1>Statistics: Measures of Central Tendency</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean">Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-find-the-median">Steps to Find the Median:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mode">Mode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Example:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-measures">Comparison of Measures</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -415,16 +444,107 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="citations">
-<h1>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h1>
-<div class="docutils container" id="id1">
-<div role="list" class="citation-list">
-<div class="citation" id="id3" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>BCW00<span class="fn-bracket">]</span></span>
-<p>Richard V. Burkhauser, Kenneth A. Couch, and David C. Wittenburg. Who minimum wage increases bite: an analysis using monthly data from the sipp and the cps. <em>Southern Economic Journal</em>, 67(1):16–40, 2000. URL: <a class="reference external" href="http://www.jstor.org/stable/1061611">http://www.jstor.org/stable/1061611</a> (visited on 2024-09-02).</p>
-</div>
-</div>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="statistics-measures-of-central-tendency">
+<h1>Statistics: Measures of Central Tendency<a class="headerlink" href="#statistics-measures-of-central-tendency" title="Link to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
+<p><strong>Measures of Central Tendency:</strong> Statistical measures that describe the center or typical value of a dataset.</p>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>Measures of central tendency provide a summary statistic that represents the entire dataset, making it easier to understand and interpret data.</p>
+<p>The three most common measures of central tendency are:</p>
+<ol class="arabic simple">
+<li><p><strong>Mean</strong></p></li>
+<li><p><strong>Median</strong></p></li>
+<li><p><strong>Mode</strong></p></li>
+</ol>
+</section>
+<section id="mean">
+<h2>Mean<a class="headerlink" href="#mean" title="Link to this heading">#</a></h2>
+<p>The <strong>mean</strong>, often referred to as the average, is calculated by summing all values in a dataset and dividing by the number of values.</p>
+<section id="formula">
+<h3>Formula:<a class="headerlink" href="#formula" title="Link to this heading">#</a></h3>
+<p>For a population mean (<span class="math notranslate nohighlight">\(\mu\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[
+\mu = \frac{1}{N} \sum_{i=1}^{N} x_i
+\]</div>
+<p>For a sample mean (<span class="math notranslate nohighlight">\(\bar{x}\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+\]</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N\)</span> = number of units in the population</p></li>
+<li><p><span class="math notranslate nohighlight">\(n\)</span> = number of units in the sample</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_i\)</span> = each individual value in the population/sample</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Note:</strong> There is a distinction in notation between the population mean, <span class="math notranslate nohighlight">\(\mu\)</span>, and the sample mean, <span class="math notranslate nohighlight">\(\bar{x}\)</span>. This is because <span class="math notranslate nohighlight">\(\mu\)</span> is a population parameter and <span class="math notranslate nohighlight">\(\bar{x}\)</span> is a sample statistic or <em>estimator</em> for <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
+</div></blockquote>
+</section>
+<section id="example">
+<h3>Example:<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
+<p>For the sample dataset <span class="math notranslate nohighlight">\(\{4, 8, 6, 5, 3\}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{x} = \frac{4 + 8 + 6 + 5 + 3}{5} = \frac{26}{5} = 5.2
+\]</div>
+</section>
+</section>
+<section id="median">
+<h2>Median<a class="headerlink" href="#median" title="Link to this heading">#</a></h2>
+<p>The <strong>median</strong> is the middle value of a dataset when the values are arranged in ascending or descending order. If the dataset has an odd number of observations, the median is the middle number. If it has an even number of observations, the median is the average of the two middle numbers.</p>
+<section id="steps-to-find-the-median">
+<h3>Steps to Find the Median:<a class="headerlink" href="#steps-to-find-the-median" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Arrange the data in order.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(n\)</span> is odd, the median is the value at position <span class="math notranslate nohighlight">\(\frac{n + 1}{2}\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(n\)</span> is even, the median is the average of the values at positions <span class="math notranslate nohighlight">\(\frac{n}{2}\)</span> and <span class="math notranslate nohighlight">\(\frac{n}{2} + 1\)</span>.</p></li>
+</ol>
+</section>
+<section id="id1">
+<h3>Example:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>For the dataset <span class="math notranslate nohighlight">\(\{4, 8, 6, 5, 3\} \ (sorted: \{3, 4, 5, 6, 8\})\)</span>:</p>
+<ul>
+<li><p><strong>Odd</strong>:</p>
+<p>Median = 5 (the third value)</p>
+</li>
+</ul>
+<p>For the dataset <span class="math notranslate nohighlight">\(\{4, 8, 6, 5\} \ (sorted: \{4, 5, 6, 8\})\)</span>:</p>
+<ul>
+<li><p><strong>Even</strong>:</p>
+<p>Median = <span class="math notranslate nohighlight">\(\frac{5 + 6}{2} = 5.5\)</span></p>
+</li>
+</ul>
+</section>
+</section>
+<section id="mode">
+<h2>Mode<a class="headerlink" href="#mode" title="Link to this heading">#</a></h2>
+<p>The <strong>mode</strong> is the value that appears most frequently in a dataset. A dataset may have one mode (unimodal), more than one mode (bimodal or multimodal), or no mode at all.</p>
+<section id="id2">
+<h3>Example:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>For the dataset <span class="math notranslate nohighlight">\(\{4, 8, 6, 5, 3, 4\}\)</span>:</p>
+<ul class="simple">
+<li><p>The mode is 4 (it appears twice).</p></li>
+</ul>
+<p>For the dataset <span class="math notranslate nohighlight">\(\{1, 2, 2, 3, 3, 4\}\)</span>:</p>
+<ul class="simple">
+<li><p>The dataset is bimodal with modes 2 and 3.</p></li>
+</ul>
+</section>
+</section>
+<section id="comparison-of-measures">
+<h2>Comparison of Measures<a class="headerlink" href="#comparison-of-measures" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Mean</strong>: Sensitive to extreme values (outliers) and skew.</p></li>
+<li><p><strong>Median</strong>: Robust measure that provides a better representation when the dataset contains outliers.</p></li>
+<li><p><strong>Mode</strong>: Useful for categorical data or to identify the most common value.</p></li>
+</ul>
+<p><img alt="Measures of Central Tendency" src="../_images/central_tendency.png" /></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -458,13 +578,22 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="08-01-03-Variability.html"
+       href="08-01-01-Populations-Samples.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Statistics: Populations &amp; Samples</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="08-01-03-Variability.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Statistics: Measures of Variability</p>
       </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -472,6 +601,37 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean">Mean</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formula">Formula:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#median">Median</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-find-the-median">Steps to Find the Median:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mode">Mode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Example:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-of-measures">Comparison of Measures</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
