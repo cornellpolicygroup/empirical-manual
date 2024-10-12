@@ -93,3 +93,5 @@ For the dataset $\{1, 2, 2, 3, 3, 4\}$:
 - **Mode**: Useful for categorical data or to identify the most common value.
 
 ![Measures of Central Tendency](/content/images/causal_inference/central_tendency.png)
+
+**Image Source:** https://ledidi.com/academy/measures-of-central-tendency-mean-median-and-mode 
