@@ -35,6 +35,9 @@ parts:
       - file: content/08-01-01-Populations-Samples
       - file: content/08-01-02-Central-Tendency
       - file: content/08-01-03-Variability
+      - file: content/08-01-04-Data
+      - file: content/08-01-05-Variables
+      - file: content/08-01-06-Probability
   - caption: Appendix
     chapters:
     - file: content/citations
