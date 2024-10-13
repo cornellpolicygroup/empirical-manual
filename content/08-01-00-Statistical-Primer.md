@@ -2,7 +2,7 @@
 
 ## Overview:
 
-This primer on statistics will present a brief review of foundational statistical concepts of relevant to causal inference and empirical research. The topics presented include:
+This primer on statistics will present a brief review of foundational statistical concepts relevant to causal inference and empirical research. The topics presented include:
 
 - Populations & Samples
 - Measures of Central Tendency

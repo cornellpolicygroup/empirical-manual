@@ -100,6 +100,6 @@ The function $\hat{\theta}$ is our **estimator** for the true population paramet
 
 ### Why the Distinction? 
 
-Unless we conduct a census and gather data on the entire population, we will never know the true value of any population parameter. Sample statistic estimators are the best operationalization we have to estimate population parameters (that's why we even bother developing fields like causal inference: to help us better estimate population parameters).For this reason, it's best we separate the abstract (population parameters) from the concrete (summary statistics) in our work. 
+Unless we conduct a census and gather data on the entire population, we will never know the true value of any population parameter. Sample statistic estimators are the best operationalization we have to estimate population parameters (that's why we even bother developing fields like causal inference: to help us better estimate population parameters). For this reason, it's best we separate the abstract (population parameters) from the concrete (summary statistics) in our work. 
 
 Because estimation from samples is messy and wrought with error, we must often adjust our formulas and functions to fine tune our estimators to produce estimates closer to the true population parameter. Sometimes, the formula for a population parameter will look different than the formula for its sample statistic estimator. Having distinct notation for parameters and their estimators, then, will avoid confusion and improve clarity down the line.
