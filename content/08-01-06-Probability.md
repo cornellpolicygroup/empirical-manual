@@ -145,9 +145,11 @@ Conditional expectation allows us to focus on a subset of data or scenarios by a
 #### Law of Iterated Expectations
 
 In general, the relationship between conditional expectation and standard expectation can be written as:
+
 $$
 E(X) = E\left[E(X \mid Y)\right]
 $$
+
 This equation reflects that the overall expected value of $X$ can be broken down into the weighted average of its conditional expectations across all possible values of $Y$. This is known as the **Law of Iterated Expectations**. This property is particularly useful in probability theory and statistics for breaking complex expectations into simpler components.
 
 ## Variance
