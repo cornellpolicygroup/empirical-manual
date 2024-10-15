@@ -136,7 +136,7 @@ $$
 
 This shows that $\bar{X}$ is an efficient estimator.
 
-> ### Proof that the Sample Mean Achieves the CRLB
+> **Proof that the Sample Mean Achieves the CRLB**
 > 
 > Assume we have a sample $X_1, X_2, \ldots, X_n$ drawn from a normal distribution $\mathcal{N}(\mu, \sigma^2)$, where $\mu$ is the unknown parameter we want to estimate, and $\sigma^2$ is known.
 > 
@@ -209,9 +209,11 @@ L(\mu) = \prod_{i=1}^{n} \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(X_i - \
 ### Mean Squared Error (MSE)
 
 The **mean squared error (MSE)** combines both bias and variance to give an overall measure of an estimator's accuracy:
+
 $$
 MSE(\hat{\theta}) = E[(\hat{\theta} - \theta)^2] = \text{Var}(\hat{\theta}) + \text{Bias}(\hat{\theta})^2
 $$
+
 An estimator with low MSE has both low bias and low variance, making it a reliable estimate of the population parameter.
 
 ## Interval Estimation
@@ -219,13 +221,17 @@ An estimator with low MSE has both low bias and low variance, making it a reliab
 ### Confidence Intervals
 
 A **confidence interval** provides a range of values within which the population parameter is likely to fall, unlike point estimates that provide just a single value. The confidence interval is often expressed as:
+
 $$
 \hat{\theta} \pm \text{margin of error}
 $$
+
 For example, the confidence interval for the population mean $\mu$ using the sample mean $\bar{x}$ is:
+
 $$
 \bar{x} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}
 $$
+
 where $z_{\alpha/2}$ is the critical value from the standard normal distribution and $\frac{\sigma}{\sqrt{n}}$ is the standard error of the sample mean.
 
 ### Confidence Level
@@ -242,9 +248,11 @@ Common confidence levels are 90%, 95%, and 99%. A 95% confidence interval, for i
 ### Significance Level ($\alpha$)
 
 The **significance level** $\alpha$ is the probability of rejecting a true population parameter. It is related to the confidence level by:
+
 $$
 \alpha = 1 - \text{confidence level}
 $$
+
 For a 95% confidence level, $\alpha = 0.05$. This significance level determines the critical values and the rejection region in hypothesis testing.
 
 ### Critical Region and Critical Value
@@ -254,6 +262,7 @@ The **critical region** is the set of values that lead us to reject the null hyp
 ### Factors Determining the Width of the Confidence Interval
 
 Several factors influence the width of the confidence interval:
+
 - **Level of Confidence**: A higher confidence level results in a wider interval.
 - **Variability**: Greater variability in the data (larger $\sigma$) results in a wider interval.
 - **Sample Size**: Larger sample sizes result in narrower confidence intervals, as the standard error decreases with increased sample size.
@@ -284,7 +293,9 @@ $$
 ### Confidence Interval using $t$-Distribution
 
 When the population standard deviation $\sigma$ is unknown, the confidence interval for the population mean $\mu$ is calculated using the $t$-distribution:
+
 $$
 \bar{x} \pm t_{\alpha/2, n-1} \frac{s}{\sqrt{n}}
 $$
+
 where $t_{\alpha/2, n-1}$ is the critical value from the $t$-distribution, $s$ is the sample standard deviation, and $n$ is the sample size.

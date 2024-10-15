@@ -297,58 +297,72 @@ The **Central Limit Theorem (CLT)** states that, given a sufficiently large samp
 1. **Bernoulli Distribution**: 
    - Represents a single trial with two possible outcomes: success ($1$) and failure ($0$).
    - **Probability Mass Function (PMF)**: 
+     
      $$
      P(X = x) = p^x (1 - p)^{1 - x} \quad \text{for } x = 0, 1
      $$
+
    - Parameter: $p$ (probability of success).
 
 2. **Binomial Distribution**:
    - Describes the number of successes in $n$ independent Bernoulli trials.
    - **PMF**:
+     
      $$
      P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
      $$
+
      where $k = 0, 1, \dots, n$.
    - Parameters: $n$ (number of trials), $p$ (probability of success).
 
 3. **Geometric Distribution**:
    - Models the number of trials until the first success in a series of Bernoulli trials.
    - **PMF**:
+     
      $$
      P(X = k) = (1 - p)^{k - 1} p
      $$
+
      where $k = 1, 2, 3, \dots$.
    - Parameter: $p$ (probability of success).
 
 4. **Poisson Distribution**:
    - Represents the number of events occurring in a fixed interval, assuming the events happen independently.
    - **PMF**:
+
      $$
      P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
      $$
+
      where $k = 0, 1, 2, \dots$.
    - Parameter: $\lambda$ (average rate of occurrence).
 
 5. **Exponential Distribution**:
    - Models the time between events in a Poisson process.
    - **PDF**:
+  
      $$
      f(x) = \lambda e^{-\lambda x} \quad \text{for } x \geq 0
      $$
+
    - Parameter: $\lambda$ (rate of occurrence).
 
 6. **Uniform Distribution**:
    - All outcomes are equally likely within a defined range.
    - **PDF (continuous)**:
+     
      $$
      f(x) = \frac{1}{b - a} \quad \text{for } a \leq x \leq b
      $$
+
    - Parameters: $a$ (minimum), $b$ (maximum).
 
 7. **Chi-Squared Distribution**:
    - A distribution of the sum of squares of $k$ independent standard normal random variables.
    - **PDF**:
+     
      $$
      f(x; k) = \frac{1}{2^{k/2} \Gamma(k/2)} x^{k/2 - 1} e^{-x/2} \quad \text{for } x > 0
      $$
+     
    - Parameter: $k$ (degrees of freedom).
