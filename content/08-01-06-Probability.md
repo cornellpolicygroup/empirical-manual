@@ -195,12 +195,15 @@ The **normal distribution** is a continuous probability distribution that is sym
 ![Generic Normal Distribution](/content/images/causal_inference/norm_distr.png)
 
 - **Probability density function (PDF)** of the normal distribution:
+  
   $$
   f(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp \left( -\frac{(x - \mu)^2}{2\sigma^2} \right)
   $$
+
   where $\mu$ is the mean and $\sigma^2$ is the variance.
 
 - **Cumulative distribution function (CDF)** of the normal distribution:
+  
   $$
   F(x) = P(X \leq x) = \int_{-\infty}^{x} \frac{1}{\sigma \sqrt{2\pi}} \exp \left( -\frac{(t - \mu)^2}{2\sigma^2} \right) dt
   $$
