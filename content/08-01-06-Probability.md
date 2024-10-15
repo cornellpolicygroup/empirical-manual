@@ -282,15 +282,20 @@ A **sampling distribution** is the probability distribution of a statistic (like
 
 The **Central Limit Theorem (CLT)** states that, given a sufficiently large sample size, the sampling distribution of the sample mean $\bar{X}$ will be approximately normal, regardless of the distribution of the population from which the sample is drawn.
 
-### **Key result**:
-  $$
-  \bar{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
-  $$
-  This approximation improves as the sample size $n$ increases. The CLT is foundational in inferential statistics because it allows us to make probability statements about sample means even when the population distribution is unknown.
+$$
+\bar{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
+$$
+This approximation improves as the sample size $n$ increases. 
 
-  In general, CLT applies when $n\geq 30$ at minimum. But, the actual minimum size can depend on the characteristics of the population distribution and the specific context of the analysis. For populations that are heavily skewed or have outliers, larger samples may be required to ensure the sampling distribution of the mean is approximately normal. 
+![Central Limit Theorem](/content/images/causal_inference/central_limit_theorem.png)
 
-  > **Note:** We will return to how to calculate sample size later in the Causal Inference section on power.
+**Image Source:** https://mathematicalmysteries.org/central-limit-theorem/
+
+The CLT is foundational in inferential statistics because it allows us to make probability statements about sample means even when the population distribution is unknown.
+
+In general, CLT applies when $n\geq 30$ at minimum. But, the actual minimum size can depend on the characteristics of the population distribution and the specific context of the analysis. For populations that are heavily skewed or have outliers, larger samples may be required to ensure the sampling distribution of the mean is approximately normal. 
+
+> **Note:** We will return to how to calculate sample size later in the Causal Inference section on power.
 
 ## Overview of Probability Distributions
 
@@ -364,5 +369,5 @@ The **Central Limit Theorem (CLT)** states that, given a sufficiently large samp
      $$
      f(x; k) = \frac{1}{2^{k/2} \Gamma(k/2)} x^{k/2 - 1} e^{-x/2} \quad \text{for } x > 0
      $$
-     
+
    - Parameter: $k$ (degrees of freedom).

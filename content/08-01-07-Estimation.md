@@ -258,7 +258,14 @@ For a 95% confidence level, $\alpha = 0.05$. This significance level determines 
 
 The **critical region** is the set of values that lead us to reject the null hypothesis (more on this in the next section). The **critical value** marks the boundary of this region and depends on the significance level. For a 95% confidence level, the critical value for a two-tailed standard normal distribution is $z_{\alpha/2} = 1.96$.
 
-### Factors Determining the Width of the Confidence Interval
+![Critical Values & Region](/content/images/causal_inference/critical_region_shaded.png)
+
+**Image Source:** https://statkat.com/find-critical-value/significance-level-alpha/t.php, https://memos.evergreencap.com/p/game-selection
+
+- **Narrower Confidence Intervals**: Smaller margin of error, thus more reliable estimate of $\theta$
+- **Wider Confidence Intervals**: Larger margin of error, thus less reliable estimate of $\theta$
+
+#### Factors Determining the Width of the Confidence Interval
 
 Several factors influence the width of the confidence interval:
 
@@ -266,9 +273,19 @@ Several factors influence the width of the confidence interval:
 - **Variability**: Greater variability in the data (larger $\sigma$) results in a wider interval.
 - **Sample Size**: Larger sample sizes result in narrower confidence intervals, as the standard error decreases with increased sample size.
 
+#### Example: 90% Confidence Level, Two-Tail
+
+![Critical Region Example](/content/images/causal_inference/critical_region_example.png)
+
+**Image Source:** PUBPOL 3100 Lecture Slides, Dr. Divya Deepthi
+
 ## The $t$-Distribution
 
 The **$t$-distribution** is used instead of the normal distribution when the sample size is small or when the population standard deviation is unknown. It is similar to the normal distribution but has heavier tails, which account for the increased uncertainty.
+
+![t-Distribution](/content/images/causal_inference/t_distr.png)
+
+**Image Source:** PUBPOL 3100 Lecture Slides, Dr. Divya Deepthi
 
 > **Note:** In most (if not all) cases, the true population standard deviation is *not* known, meaning the $t$-distribution is the one we will use most.
 
