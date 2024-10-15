@@ -38,6 +38,7 @@ parts:
       - file: content/08-01-04-Data
       - file: content/08-01-05-Variables
       - file: content/08-01-06-Probability
+      - file: content/08-01-07-Estimation
   - caption: Appendix
     chapters:
     - file: content/citations

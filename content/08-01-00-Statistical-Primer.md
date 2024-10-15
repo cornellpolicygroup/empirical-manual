@@ -10,6 +10,7 @@ This primer on statistics will present a brief review of foundational statistica
 - Data
 - Variables
 - Probability
+- Estimation
 - Hypothesis Testing
 
 Included at the end of this section are various resources for additional study of statistics for empirical research.
