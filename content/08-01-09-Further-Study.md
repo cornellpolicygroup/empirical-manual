@@ -30,11 +30,12 @@ Provides definitions and proofs for theorems and concepts used in statistics. Th
 
 ## Statistics Resources: Texts
 
-<!--
+
 ### [*OpenIntro Statistics*](pdfs/causal_inference/OpenIntroStats.pdf) (Diez, Çetinkaya-Rundel, & Barr)
 
 Presents a comprehensive introduction to statistical ideas in a clear and accessible manner. This is a good text for any general audience, but especially for students with rudimentary understandings of statistics.
 
+<!--
 ### [*Introduction to Modern Statistics*](pdfs/causal_inference/IntroModernStats.pdf) (Çetinkaya-Rundel, & Hardin)
 
 A derivative of *OpenIntro Statistics*, this text presents contemporary applications of statistics with connections to data science. This is a good text for data scientists or econometricians who want to understand statistics as it applies to their work with data.
