@@ -4,7 +4,7 @@
 title: Cornell Policy Group Manual
 author: Elliott Serna '27
 logo: logo.png
-copyright: 2024
+copyright: '2024'
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
