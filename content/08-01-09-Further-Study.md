@@ -38,6 +38,7 @@ Presents a comprehensive introduction to statistical ideas in a clear and access
 
 A derivative of *OpenIntro Statistics*, this text presents contemporary applications of statistics with connections to data science. This is a good text for data scientists or econometricians who want to understand statistics as it applies to their work with data.
 
+> **Note:** You can also download the above two PDFs from this book's GitHub repository [here](https://github.com/cornellpolicygroup/empirical-manual/tree/main/content/pdfs/causal_inference). 
 
 ### [*An Introduction to Mathematical Statistics and Its Applications*](https://math.emory.edu/~lchen41/teaching/2020_Spring/Larsen-5E.pdf) (Larsen & Marx)
 
