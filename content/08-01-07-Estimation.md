@@ -136,7 +136,7 @@ $$
 
 This shows that $\bar{X}$ is an efficient estimator.
 
-> **Proof that the Sample Mean Achieves the CRLB**
+> ### Proof that the Sample Mean Achieves the CRLB
 > 
 > Assume we have a sample $X_1, X_2, \ldots, X_n$ drawn from a normal distribution $\mathcal{N}(\mu, \sigma^2)$, where $\mu$ is the unknown parameter we want to estimate, and $\sigma^2$ is known.
 > 
@@ -241,7 +241,6 @@ The **confidence level** is the probability that the interval contains the true 
 I.e., at a 95% CL, you are okay with the 5% chance that the true $\theta$ takes a value outside of the specified range of values in your confidence interval. Or, intuitively, it's saying:
 
     “I’m 95% confident the population mean lies between these lower and upper limits.”
-
 
 Common confidence levels are 90%, 95%, and 99%. A 95% confidence interval, for instance, means that if we took 100 different samples, approximately 95 of the intervals would contain the true parameter.
 
