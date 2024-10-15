@@ -39,6 +39,7 @@ parts:
       - file: content/08-01-05-Variables
       - file: content/08-01-06-Probability
       - file: content/08-01-07-Estimation
+      - file: content/08-01-08-Hypothesis-Test
   - caption: Appendix
     chapters:
     - file: content/citations
