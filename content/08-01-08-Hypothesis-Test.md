@@ -37,8 +37,7 @@ Where
 - $\theta$ is the population parameter of interest.
 - $\theta_0$ is the hypothesized value of the population parameter under the null.
 
-> **Note:** Because the null hypothesis often represents the status quo, most null hypotheses we'll encounter take the form of:
-> $$H_0: \theta = 0$$
+> **Note:** Because the null hypothesis often represents the status quo, most null hypotheses we'll encounter take the form of: $H_0: \theta = 0$
 
 #### Alternative Hypothesis
 
