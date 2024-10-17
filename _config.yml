@@ -12,7 +12,7 @@ execute:
   execute_notebooks: force
 
 # Define the name of the latex output file for PDF builds
-latex:
+latex: katex
   latex_documents:
     targetname: book.tex
 
