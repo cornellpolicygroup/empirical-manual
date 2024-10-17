@@ -44,6 +44,7 @@ parts:
     - file: content/08-02-00-Linear-Reg-Primer
       sections:
       - file: content/08-02-01-LR-Overview
+    - file: content/08-03-Potential-Outcomes
   - caption: Appendix
     chapters:
     - file: content/citations
