@@ -33,8 +33,3 @@ html:
   use_repository_button: true
   extra_css:
     - css/custom.css  # Path to your custom CSS file in the _static folder
-
-# Math configuration: Switch to KaTeX
-math:
-  # Use KaTeX instead of MathJax for faster rendering
-  katex: true
