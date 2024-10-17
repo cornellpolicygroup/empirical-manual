@@ -41,6 +41,9 @@ parts:
       - file: content/08-01-07-Estimation
       - file: content/08-01-08-Hypothesis-Test
       - file: content/08-01-09-Further-Study
+    - file: content/08-02-00-Linear-Reg-Primer
+      sections:
+      - file: content/08-02-01-LR-Overview
   - caption: Appendix
     chapters:
     - file: content/citations
