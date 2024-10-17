@@ -20,7 +20,7 @@ The Potential Outcomes Framework is one of the most widely used frameworks for u
 
 - **Heterogeneous Treatment Effect Bias**: The bias that arises when the treatment effect varies across different subgroups in the population, making it difficult to estimate a single average treatment effect accurately.
 
-- **Endogeneity**: A situation in which an explanatory variable is correlated with the error term in a regression model, leading to biased estimates of causal effects.
+- **Endogeneity**: A situation in which something inside the system being studied interferes with the ability to isolate the true effect of one variable on another
 
 - **Selection Bias**: The bias introduced when the selection of individuals into treatment and control groups is not random, leading to systematic differences in observed outcomes that are not due to the treatment itself.
 

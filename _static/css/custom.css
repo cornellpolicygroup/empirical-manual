@@ -8,3 +8,10 @@
     overflow-x: auto;
     word-wrap: normal;
 }
+
+/* Example CSS for LaTeX alignment */
+.math { 
+    font-family: 'Latin Modern Math', serif; 
+    vertical-align: baseline; /* Adjust alignment */
+  }
+  
