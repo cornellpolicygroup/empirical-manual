@@ -216,6 +216,7 @@ For example, we'll index an element $a_{ij}$ to be the element $a$ in the $i$-th
 > - **Plain lowercase letters with subscript indexes** like $a_{ij}$ represent **individual scalar elements** within a matrix.
 > 
 > For example, in the case of a matrix $\mathbf{A}$:
+> 
 > $$ \mathbf{A} = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{bmatrix} $$
 >
 > - $\mathbf{A}$ is the entire matrix.
@@ -223,6 +224,7 @@ For example, we'll index an element $a_{ij}$ to be the element $a$ in the $i$-th
 > - $a_{ij}$ (lowercase) refers to the element at the $i$-th row and $j$-th column.
 >
 > Let's say, instead, we define $\mathbf{A}$ as:
+> 
 > $$ \mathbf{A} = \begin{bmatrix} x_{1} & y_{1} & z_{1} \\ x_{2} & y_{2} & z_{2} \\ x_{3} & y_{3} & z_{3} \end{bmatrix} $$
 >
 > - $\mathbf{A}$ is the entire matrix.
@@ -436,11 +438,3 @@ is $c_1 = c_2 = 0$.
 > **Connections to Linear Regression:**
 >
 > Later, we will learn about collinearity and multicollinearity, which are when independent variables in a regression are linearly dependent. Understanding linear independence allows us to understand why, for example, we can drop a collinear regressor in OLS.
-
-## Note on Notation
-
-Being on the same page about notation is essential to avoid confusion. 
-
-Already, you may have already noticed some differences in notation, like $y$ versus $y_i$ versus $Y$ and $Y_i$, or why $\beta X_{i}$ is different than $\mathbf{X}^\prime \delta$. These subtle nuances may seem arbitrary, but actually stem from matrix and vector notations in linear algebra. 
-
-Let's explore what these notation conventions are:
