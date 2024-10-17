@@ -14,4 +14,25 @@
     font-family: 'Latin Modern Math', serif; 
     vertical-align: baseline; /* Adjust alignment */
   }
+
+/* Ensure long equations or LaTeX don't overflow */
+.katex {
+    overflow-x: auto;
+  }
+  
+  /* Customize LaTeX rendering for better alignment */
+  .katex-display {
+    text-align: center;
+    font-size: 1.1em; /* Adjust font size if necessary */
+  }
+  
+  /* Ensure the layout is responsive for mobile */
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 90%; /* Adjust text size for smaller screens */
+    }
+    .katex-display {
+      font-size: 1em; /* Slightly smaller LaTeX font on mobile */
+    }
+  }
   
