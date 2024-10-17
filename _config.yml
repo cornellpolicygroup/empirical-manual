@@ -2,7 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Cornell Policy Group Manual
-author: Elliott Serna '27
+author: 
+  - Elliott Serna '27
 logo: logo.png
 copyright: '2024'
 
@@ -31,3 +32,5 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  extra_css:
+    - css/custom.css  # Path to your custom CSS file in the _static folder

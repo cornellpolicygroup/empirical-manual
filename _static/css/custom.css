@@ -1,0 +1,10 @@
+.math {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: block;
+}
+
+.output {
+    overflow-x: auto;
+    word-wrap: normal;
+}
