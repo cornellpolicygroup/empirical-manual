@@ -25,7 +25,9 @@ parts:
   - caption: Research Resources
     chapters: 
     - file: content/04-Datasets
-    - file: content/05-STATA-R
+    - file: content/05-00-STATA-R
+      sections:
+      - file: content/05-01-STATA-Commands
     - file: content/06-Writing
   - caption: Causal Inference
     chapters: 

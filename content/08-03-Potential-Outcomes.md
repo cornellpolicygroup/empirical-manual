@@ -268,4 +268,3 @@ The **Stable Unit Treatment Value Assumption (SUTVA)** is a key assumption in th
 2. **No interference between units**: The treatment assigned to one unit does not affect the potential outcomes of another unit. In essence, this means **no externalities or spillover effects**.
 
 Violations of SUTVA can occur in situations where individuals' outcomes are affected by the treatment status of others (e.g., network effects) or where the treatment is applied inconsistently.
-
