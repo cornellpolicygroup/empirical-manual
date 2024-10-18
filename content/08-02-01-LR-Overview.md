@@ -405,7 +405,7 @@ On the other hand, a set of vectors is **linearly independent** if the only solu
 
 > **Note:** For our intents and purposes, when we're trying to represent a space with a span, all vectors included must be linearly independent to produce a minimal description of the space. 
 > 
-> The inclusion of linearly dependent vectors don't 'break' anything, but they don't contribute any new information. To avoid redundancy, we can drop linearly dependent vectors until all included vectors or linearly independent.
+> The inclusion of linearly dependent vectors don't 'break' anything (at least, not glaringly), but they don't contribute any new information. To avoid redundancy, we can drop linearly dependent vectors until all included vectors are linearly independent.
 
 #### Example:
 
