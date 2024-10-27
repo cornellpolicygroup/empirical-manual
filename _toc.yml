@@ -28,6 +28,7 @@ parts:
     - file: content/05-00-STATA-R
       sections:
       - file: content/05-01-STATA-Commands
+      - file: content/05-02-R-Commands
     - file: content/06-Writing
   - caption: Causal Inference
     chapters: 
