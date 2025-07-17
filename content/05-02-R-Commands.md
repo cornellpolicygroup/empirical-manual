@@ -119,7 +119,8 @@
 - **Add row and column proportions:**
 
     ```r
-    prop.table(table(data$var1, data$var2), margin = 1)
+    prop.table(table(data$var1, data$var2), margin = 1)  # row proportions
+    prop.table(table(data$var1, data$var2), margin = 2)  # column proportions
     ```
 
 ### Correlation Matrix
@@ -162,6 +163,13 @@
 
     ```r
     ts_data <- ts(data$varname, start = c(year, month), frequency = 12)
+    ```
+
+- **Set up panel data (using plm package):**
+
+    ```r
+    library(plm)
+    pdata <- pdata.frame(data, index = c("id", "time"))
     ```
 
 ## Regressions and Statistical Models
@@ -215,14 +223,14 @@
 
     ```r
     library(plm)
-    model_re <- plm(depvar ~ indepvars, data = data, model = "random")
+    model_re <- plm(depvar ~ indepvars, data = pdata, model = "random")
     summary(model_re)
     ```
 
 - **Fixed effects model:**
 
     ```r
-    model_fe <- plm(depvar ~ indepvars, data = data, model = "within")
+    model_fe <- plm(depvar ~ indepvars, data = pdata, model = "within")
     summary(model_fe)
     ```
 
@@ -283,6 +291,81 @@
     ```r
     library(car)
     vif(model)
+    ```
+
+### Marginal Effects
+
+- **Calculate marginal effects:**
+
+    ```r
+    library(margins)
+    margins(model)
+    ```
+
+- **Summary of marginal effects:**
+
+    ```r
+    summary(margins(model))
+    ```
+
+- **Marginal effects at specific values:**
+
+    ```r
+    margins(model, at = list(varname = c(value1, value2)))
+    ```
+
+### Hypothesis Testing
+
+- **F-test for linear restrictions:**
+
+    ```r
+    library(car)
+    linearHypothesis(model, "var1 = var2")
+    ```
+
+- **Test joint significance:**
+
+    ```r
+    linearHypothesis(model, c("var1 = 0", "var2 = 0"))
+    ```
+
+- **Wald test:**
+
+    ```r
+    library(aod)
+    wald.test(Sigma = vcov(model), b = coef(model), Terms = c(2, 3))
+    ```
+
+### Linear Combinations and Contrasts
+
+- **General linear hypothesis testing:**
+
+    ```r
+    library(multcomp)
+    glht(model, linfct = "var1 + var2 = 0")
+    ```
+
+- **Custom contrasts:**
+
+    ```r
+    library(multcomp)
+    K <- matrix(c(1, 1, 0), 1)  # var1 + var2
+    glht(model, linfct = K)
+    ```
+
+### Model Comparison
+
+- **Compare nested models:**
+
+    ```r
+    anova(model1, model2)
+    ```
+
+- **Likelihood ratio test:**
+
+    ```r
+    library(lmtest)
+    lrtest(model1, model2)
     ```
 
 ## Graphs and Visualizations
@@ -348,6 +431,13 @@ library(packagename)
     library(texreg)
     ```
 
+- **`modelsummary`:** Modern table output with many formats.
+
+    ```r
+    install.packages("modelsummary")
+    library(modelsummary)
+    ```
+
 - **`AER`:** Contains `ivreg` for instrumental variables regressions.
 
     ```r
@@ -360,6 +450,13 @@ library(packagename)
     ```r
     install.packages("plm")
     library(plm)
+    ```
+
+- **`fixest`:** Fast fixed effects estimation.
+
+    ```r
+    install.packages("fixest")
+    library(fixest)
     ```
 
 - **`sandwich`:** Robust standard errors.
@@ -390,7 +487,7 @@ library(packagename)
     library(vars)
     ```
 
-- **`margins`:** Visualize marginal effects after regression.
+- **`margins`:** Calculate and visualize marginal effects.
 
     ```r
     install.packages("margins")
@@ -402,4 +499,25 @@ library(packagename)
     ```r
     install.packages("broom")
     library(broom)
+    ```
+
+- **`multcomp`:** Multiple comparisons and general linear hypotheses.
+
+    ```r
+    install.packages("multcomp")
+    library(multcomp)
+    ```
+
+- **`aod`:** Analysis of overdispersed data and additional model tests.
+
+    ```r
+    install.packages("aod")
+    library(aod)
+    ```
+
+- **`ggplot2`:** Advanced data visualization.
+
+    ```r
+    install.packages("ggplot2")
+    library(ggplot2)
     ```

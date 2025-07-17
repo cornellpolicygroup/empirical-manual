@@ -283,6 +283,66 @@
     estat vif
     ```
 
+### Marginal Effects
+
+- **Calculate marginal effects:**
+
+    ```stata
+    margins
+    ```
+
+- **Marginal effects at means:**
+
+    ```stata
+    margins, atmeans
+    ```
+
+- **Marginal effects at specific values:**
+
+    ```stata
+    margins, at(varname=value)
+    ```
+
+### Hypothesis Testing
+
+- **Test linear restrictions:**
+
+    ```stata
+    test var1 = var2
+    ```
+
+- **Test joint significance:**
+
+    ```stata
+    test var1 var2 var3
+    ```
+
+- **Test non-linear restrictions:**
+
+    ```stata
+    testnl _b[var1] * _b[var2] = 1
+    ```
+
+### Linear and Nonlinear Combinations
+
+- **Linear combination of coefficients:**
+
+    ```stata
+    lincom var1 + var2
+    ```
+
+- **Nonlinear combination of coefficients:**
+
+    ```stata
+    nlcom exp(_b[var1])
+    ```
+
+- **Delta method for standard errors:**
+
+    ```stata
+    nlcom _b[var1] / _b[var2]
+    ```
+
 ## Graphs and Visualizations
 
 ### Basic Graphs
