@@ -201,7 +201,7 @@ L(\mu) = \prod_{i=1}^{n} \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(X_i - \
 > 
 > $$\text{Var}(\bar{X}) = \frac{\sigma^2}{n} = \frac{1}{\mathcal{I}(\mu)}$$
 > 
-> This shows that the sample mean $\bar{X}$ achieves the CRLB, confirming that it is an efficient estimator for the mean \(\mu\) of a normal distribution.
+> This shows that the sample mean $\bar{X}$ achieves the CRLB, confirming that it is an efficient estimator for the mean $\mu$ of a normal distribution.
 
 
 > **Note:** For all intents and purposes, it is sufficient to understand efficiency of estimators to be the unbiased estimator $\hat{\theta}^*$ with the lowest variance of all possible $\hat{\theta}$.
