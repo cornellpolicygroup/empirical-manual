@@ -45,7 +45,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build . --verbose
+        jupyter-book build .
 
     # Setup Pages
     - name: Setup Pages
