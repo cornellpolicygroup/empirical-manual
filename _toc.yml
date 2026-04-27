@@ -30,24 +30,27 @@ parts:
       - file: content/05-01-STATA-Commands
       - file: content/05-02-R-Commands
     - file: content/06-Writing
+    - file: content/08-00-Reading
+      sections: 
+      - file: content/08-01-ABMs
   - caption: Causal Inference
     chapters: 
-    - file: content/08-00-Causal-Inference-Details
-    - file: content/08-01-00-Statistical-Primer
+    - file: content/09-00-Causal-Inference-Details
+    - file: content/09-01-00-Statistical-Primer
       sections:
-      - file: content/08-01-01-Populations-Samples
-      - file: content/08-01-02-Central-Tendency
-      - file: content/08-01-03-Variability
-      - file: content/08-01-04-Data
-      - file: content/08-01-05-Variables
-      - file: content/08-01-06-Probability
-      - file: content/08-01-07-Estimation
-      - file: content/08-01-08-Hypothesis-Test
-      - file: content/08-01-09-Further-Study
-    - file: content/08-02-00-Linear-Reg-Primer
+      - file: content/09-01-01-Populations-Samples
+      - file: content/09-01-02-Central-Tendency
+      - file: content/09-01-03-Variability
+      - file: content/09-01-04-Data
+      - file: content/09-01-05-Variables
+      - file: content/09-01-06-Probability
+      - file: content/09-01-07-Estimation
+      - file: content/09-01-08-Hypothesis-Test
+      - file: content/09-01-09-Further-Study
+    - file: content/09-02-00-Linear-Reg-Primer
       sections:
-      - file: content/08-02-01-LR-Overview
-    - file: content/08-03-Potential-Outcomes
+      - file: content/09-02-01-LR-Overview
+    - file: content/09-03-Potential-Outcomes
   - caption: Appendix
     chapters:
     - file: content/citations

@@ -41,7 +41,9 @@ Much of what we will explore in this section on linear regression is predicated 
 >
 > Such functions are also called linear functionals.
 
-In the context of linear regression, linearity means that we are trying to express the relationship between a dependent variable (what we want to predict) and one or more independent variables (the predictors) in a way that fits a straight line.
+In linear regression, “linear” means we’re trying to predict something (like a test score or income) by adding up pieces based on other things we know (predictors like age or education), each multiplied by a number (coefficient). 
+
+If we’re using just one variable, this looks like a straight line .
 
 > **Note:** Linear regression models are linear in the parameters (i.e., the coefficients appear linearly), even if the predictors themselves are non-linear transformations of variables. For example, a model including $X^2$ or $\log(X)$ is still a linear model, so long as the regression is linear in the coefficients.
 
@@ -270,11 +272,7 @@ x_{31} & x_{32} & x_{33}
 \delta_3
 \end{bmatrix}$$
 >
-> Then:
-> $$\mathbf{X} \delta = \begin{bmatrix}
-x_{11} \delta_1 + x_{12} \delta_2 + x_{13} \delta_3 \\
-x_{21} \delta_1 + x_{22} \delta_2 + x_{23} \delta_3 \\
-x_{31} \delta_1 + x_{32} \delta_2 + x_{33} \delta_3 \end{bmatrix}$$
+> Then: $$\mathbf{X} \delta = \begin{bmatrix} x_{11} \delta_1 + x_{12} \delta_2 + x_{13} \delta_3 \\ x_{21} \delta_1 + x_{22} \delta_2 + x_{23} \delta_3 \\ x_{31} \delta_1 + x_{32} \delta_2 + x_{33} \delta_3 \end{bmatrix}$$
 >
 > This expression gives a vector of predicted outcomes—one per observation—from the linear combination of covariates and their coefficients.
 >
